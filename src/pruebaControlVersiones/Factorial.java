@@ -40,5 +40,15 @@ public class Factorial {
 
 	    return num;
 	}
+	
+	private static long factorialBucle(int n) {
+		long num = n;
+		if(num > 1) {
+			num = num * (factorialBucle(n-1));
+		}else {
+			num = 1;
+		}
+		return num;
+	}
 
 }
